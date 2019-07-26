@@ -12,5 +12,6 @@ class RingBuffer:
       self.current = 0
 
   def get(self):
+    # lambda arguments : expression
     filtered = filter(lambda x: x != None, self.storage)
     return list(filtered)
